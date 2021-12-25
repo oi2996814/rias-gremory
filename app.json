@@ -1,5 +1,6 @@
+#well300
 {
-    "name": "Spider-Man",
+    "name": "rias-gremory",
     "description": "Next level botto void",
     "keywords": [
       "bot",
@@ -11,25 +12,28 @@
       "whatsapp-sticker-bot",
       "whatsapp-botto"
     ],
-    "website": "https://github.com/Pain77/Spider-Man#readme",
-    "repository": "https://github.com/Pain77/Spider-Man.git",
-    "logo": "https://i.guim.co.uk/img/media/76e184b242a942ce7540ed3042e4bc47f3e473ae/0_187_5976_3586/master/5976.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=9eaf1cd68bbba51dd13e5c638e125ae5",
+    "website": "https://github.com/well300/rias-gremory#readme",
+    "repository": "https://github.com/well300/rias-gremory.git",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFglBpqhgdxp7Lm4xiFoLOJQDndO_ncEvQX-P3zmQSkNhqhyC_p47vlw-M5dGscBdq6jY&usqp=CAU",
     "success_url": "/",
     "env": {
       "PREFIX": {
         "description": "Prefix of your bot"
+        "value": "!"  
       },
       "SESSION": {
         "description": "A string for the session to be classified and to get access to the server endpoints"
+          "value": "well300" 
       },
       "MODS": {
         "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
         "required": false,
-        "value": "918231033230,919330880626,6285763791492"  
+        "value": "917842346461"  
       },
       "CRON": {
         "description": "Cron string to clear chats in a cycle",
         "required": false
+          "value": "null" 
       },
       "MONGO_URI": {
         "description": "A secret String for Mongodb Connection.(Required)"
