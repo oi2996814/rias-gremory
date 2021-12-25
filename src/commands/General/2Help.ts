@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
      run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
            const n = [
-           'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spider-man-1627065947.jpeg'
+           'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ac4fb8b6-d014-4b6d-92c0-0e75282eb7dd/dd0kfxg-6e5a1586-f02d-43ee-9f5e-271aa80719ea.jpg/v1/fill/w_1280,h_754,q_75,strp/rias_gremory__noahx6__by_noahx6_dd0kfxg-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzU0IiwicGF0aCI6IlwvZlwvYWM0ZmI4YjYtZDAxNC00YjZkLTkyYzAtMGU3NTI4MmViN2RkXC9kZDBrZnhnLTZlNWExNTg2LWYwMmQtNDNlZS05ZjVlLTI3MWFhODA3MTllYS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.TZJbMQjhQcfqRfXuKgNFksxv4K9ICdvcr5P4MAB8-bk'
         ]
         let zerotwo = n[Math.floor(Math.random() * n.length)]
         if (!parsedArgs.joined) {
@@ -35,7 +35,7 @@ export default class Command extends BaseCommand {
                     categories[info.config.category].push(info)
                 }
             }
-            let text = `👋🏻 (🕷) Konichiwa! *${M.sender.username}*\n`
+            let text = `👋🏻 (🍒) Konichiwa! *${M.sender.username}*\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `━━❰•Bot ${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}•❱━━\n• \`\`\`${categories[
@@ -66,5 +66,5 @@ export default class Command extends BaseCommand {
         )
     }
 
-    emojis = ['🕸','🕸','🕸','🕸','🕸','🕸','🕸','🕸','🕸','🕸','🕸','🕸','🕸','🕸','🕸','🕸','🕸','🕸','🕸']
+    emojis = ['🍒','🍒','🍒','🍒','🍒','🍒','🍒','🍒','🍒','🍒','🍒','🍒','🍒','🍒','🍒','🍒','🍒','🍒','🍒','🍒']
 }
