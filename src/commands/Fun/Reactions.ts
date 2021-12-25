@@ -91,7 +91,7 @@ export default class Command extends BaseCommand {
         })
         text += `🍁 *Usage:* ${this.client.config.prefix}(reaction) [tag/quote users]\nExample: ${this.client.config.prefix}kiss`
         if (flag) {
-            if (!term) return void M.reply(`*_🍊 AVAILABLE REACTIONS 🍊_*\n\n${text}`)
+            if (!term) return void M.reply(`*_🍒 AVAILABLE REACTIONS 🍒_*\n\n${text}`)
             if (!Object.keys(Reactions).includes(term))
                 return void M.reply(
                     ` No Reaction Found 🪒\nUse ${this.client.config.prefix}reactions to see all available reactions`
