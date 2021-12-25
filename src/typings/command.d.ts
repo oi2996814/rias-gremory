@@ -29,7 +29,6 @@ export type TCategory =
 	| "games"
 	| "educative"
 	| "general"
-        | "logo"
 	| "media"
 	| "moderation"
 	| "nsfw"
