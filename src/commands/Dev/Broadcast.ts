@@ -29,10 +29,7 @@ export default class Command extends BaseCommand {
 			return void (await M.reply(`Please provide the Broadcast Message.`));
 		const term = joined.trim();
 		const gifs = [
-			"https://c.tenor.com/7Ydf6mqbZtYAAAPo/zero-two-anime.mp4",
-			"https://c.tenor.com/Giv4A22u3KUAAAPo/zero-two-smile.mp4",
-			"https://c.tenor.com/KslZTP0KezsAAAPo/zero-two-beach.mp4",
-			"https://c.tenor.com/dE_Ph_z5kz0AAAPo/anime-pink-hair.mp4",
+			"https://c.tenor.com/giyqfACP9hMAAAPo/highschooldxd-rias.mp4",
 		];
 		const selected = gifs[Math.floor(Math.random() * gifs.length)];
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -43,7 +40,7 @@ export default class Command extends BaseCommand {
 			.map((jids) => (jids.includes("g.us") ? jids : null))
 			.filter((v) => v);
 		for (let i = 0; i < chats.length; i++) {
-			const text = `*🎀「 0-2 BROADCAST 」🎀*\n\n${term}\n\n ʀᴇɢᴀʀᴅs ~ *${M.sender.username}*`;
+			const text = `*🍒「 RIAS-BROADCAST 」🍒*\n\n${term}\n\n ʀᴇɢᴀʀᴅs ~ *${M.sender.username}*`;
 			this.client.sendMessage(chats[i], { url: selected }, MessageType.video, {
 				mimetype: Mimetype.gif,
 				caption: `${text}`,
